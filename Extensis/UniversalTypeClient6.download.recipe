@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads, Extensis Universal Type Client 6.</string>
+	<string>Downloads Extensis Universal Type Client 6.</string>
 	<key>Identifier</key>
-	<string>com.github.jessepeterson.download.UniversalTypeClient6</string>
+	<string>com.github.primalcurve.download.UniversalTypeClient6</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
