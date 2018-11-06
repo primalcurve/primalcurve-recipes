@@ -38,7 +38,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%MAJOR_VERSION%-%MINOR_VERSION%-%release%.dmg</string>
+				<string>%NAME%-%MAJOR_VERSION%-%MINOR_VERSION%-%release%.dmg</string>
 				<key>url</key>
 				<string>%DOWNLOAD_URL%%MAJOR_VERSION%.%MINOR_VERSION%.%release%/</string>
 			</dict>
