@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads latest Tableau Desktop disk image and makes a pkg.</string>
 	<key>Identifier</key>
-	<string>com.github.gmarnin.pkg.tableau-desktop</string>
+	<string>com.github.primalcurve.primalcurve-recipes.pkg.tableaudesktop_version</string>
 	<key>Input</key>
 	<dict>
 		<key>MAJOR_VERSION</key>
