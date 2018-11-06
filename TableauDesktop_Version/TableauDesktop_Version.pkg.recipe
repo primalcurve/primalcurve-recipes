@@ -8,13 +8,17 @@
 	<string>com.github.gmarnin.pkg.tableau-desktop</string>
 	<key>Input</key>
 	<dict>
-		<key>NAME</key>
-		<string>TableauDesktop</string>
+		<key>MAJOR_VERSION</key>
+		<string>10</string>
+        <key>MINOR_VERSION</key>
+        <string>1</string>
+        <key>NAME</key>
+        <string>TableauDesktop</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.gmarnin.download.tableau-desktop</string>
+	<string>com.github.primalcurve.primalcurve-recipes.download.tableaudesktop_version</string>
 	<key>Process</key>
 	<array>
 		<dict>
