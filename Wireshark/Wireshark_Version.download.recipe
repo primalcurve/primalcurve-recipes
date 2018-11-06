@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads a specific version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.primalcurve.primalcurve-recipes.download.Wireshark</string>
+    <string>com.github.primalcurve.primalcurve-recipes.download.Wireshark_Version</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
