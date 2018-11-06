@@ -40,7 +40,7 @@
 				<key>filename</key>
 				<string>%MAJOR_VERSION%-%MINOR_VERSION%-%release%.dmg</string>
 				<key>url</key>
-				<string>%DOWNLOAD_URL%/%MAJOR_VERSION%.%MINOR_VERSION%.%release%/</string>
+				<string>%DOWNLOAD_URL%%MAJOR_VERSION%.%MINOR_VERSION%.%release%/</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
