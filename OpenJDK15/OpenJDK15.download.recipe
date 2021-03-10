@@ -3,18 +3,28 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads a specific version of Wireshark.</string>
+    <string>Downloads the latest OpenJDK 15 for macOS.</string>
     <key>Identifier</key>
-    <string>com.github.primalcurve.primalcurve-recipes.download.Wireshark_Version</string>
+    <string>com.github.primalcurve.download.OpenJDK15</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Wireshark</string>
-        <key>VERSION</key>
-        <string>2.4.5</string>
+        <string>OpenJDK 15</string>
+        <key>MAJOR_VERSION</key>
+        <string>15</string>
+        <key>VENDOR</key>
+        <string>OpenJDK</string>
+        <key>SOFTWARETITLE</key>
+        <string>Java</string>
+        <key>SOFTWARETYPE</key>
+        <string>JDK</string>
+        <key>SEARCH_URL</key>
+        <string>https://jdk.java.net/%MAJOR_VERSION%/index.html</string>
+        <key>SEARCH_PATTERN</key>
+        <string>(?P&lt;url&gt;https://download.java.net/java/GA/jdk%MAJOR_VERSION%.*?/GPL/openjdk-%MAJOR_VERSION%.*?_osx-x64_bin\.tar\.gz)</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.4.0</string>
+    <string>1.0.0</string>
     <key>Process</key>
     <array>
         <dict>
@@ -23,16 +33,9 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://www.wireshark.org/download/osx/all-versions/</string>
-                <key>request_headers</key>
-                <dict>
-                    <key>User-Agent</key>
-                    <string>Safari 8.0.2</string>
-                </dict>
+                <string>%SEARCH_URL%</string>
                 <key>re_pattern</key>
-                <string>(Wireshark %VERSION%.*.dmg)</string>
-                <key>result_output_var_name</key>
-                <string>match</string>
+                <string>%SEARCH_PATTERN%</string>
             </dict>
         </dict>
         <dict>
@@ -41,9 +44,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://www.wireshark.org/download/osx/all-versions/%match%</string>
-                <key>filename</key>
-                <string>%match%</string>
+                <string>%url%</string>
             </dict>
         </dict>
         <dict>
